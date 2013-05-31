@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta content="charset=utf-8">
+	<title>Oakwood Responsive Slider</title>
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+	
+  <!-- Syntax Highlighter -->
+	<link href="slider-css/shCore.css" rel="stylesheet" type="text/css" />
+  <link href="slider-css/shThemeDefault.css" rel="stylesheet" type="text/css" />
+  <!-- Demo CSS -->
+	<link rel="stylesheet" href="slider-css/demo.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="slider-css/flexslider.css" type="text/css" media="screen" />
+	
+	<!-- Modernizr -->
+  <script src="js/modernizr.js"></script>
+  
+</head>
+<body class="loading">
+
+	
+  
+  <div id="container" class="cf">
+    
+
+	<div id="main" role="main">
+      <section class="slider">
+        <div id="slider" class="flexslider">
+          <ul class="slides">
+            <li>
+  	    	   <img src="slider-images/carousel6.jpg" />
+  	    	</li>
+  	    	<li>
+  	    	   <img src="slider-images/carousel2.jpg" />
+  	    	</li>
+  	    	<li>
+  	    	   <img src="slider-images/carousel3.jpg" />
+  	    	</li>
+  	    	<li>
+  	    	   <img src="slider-images/carousel4.jpg" />
+  	    	</li>
+            <li>
+  	    	    <img src="slider-images/carousel5.jpg" />
+  	    	</li>		
+          </ul>
+        </div>
+        <div id="carousel" class="flexslider">
+          <ul class="slides">
+            <li>
+  	    	   <img src="slider-images/carousel1.jpg" />
+  	    	</li>
+  	    	<li>
+  	    	   	<img src="slider-images/carousel2.jpg" />
+  	    	</li>
+  	    	<li>
+  	    	    <img src="slider-images/carousel3.jpg" />
+  	    	</li>
+  	    	<li>
+  	    	    <img src="slider-images/carousel4.jpg" />
+  	    	</li>
+            <li>
+  	    	    <img src="slider-images/carousel5.jpg" />
+  	    	</li>
+  	    	
+  	    		
+          </ul>
+        </div>
+      </section>
+     
+    </div>
+  
+  </div>
+  
+  <!-- jQuery -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="slider-js/libs/jquery-1.7.min.js">\x3C/script>')</script>
+  
+  <!-- FlexSlider -->
+  <script defer src="slider-js/jquery.flexslider.js"></script>
+  
+  <script type="text/javascript">
+    $(function(){
+      SyntaxHighlighter.all();
+    });
+    $(window).load(function(){
+      $('#carousel').flexslider({
+        animation: "slide",
+        controlNav: false,
+        animationLoop: false,
+        slideshow: false,
+        itemWidth: 130,
+        itemMargin: 5,
+        asNavFor: '#slider'
+      });
+      
+      $('#slider').flexslider({
+        maxItems: 4,
+        animation: "slide",
+        controlNav: false,
+        animationLoop: false,
+        slideshow: false,
+        sync: "#carousel",
+        start: function(slider){
+          $('body').removeClass('loading');
+        }
+      });
+    });
+  </script>
+
+
+  <!-- Syntax Highlighter -->
+  <script type="text/javascript" src="slider-js/shCore.js"></script>
+  <script type="text/javascript" src="slider-js/shBrushXml.js"></script>
+  <script type="text/javascript" src="slider-js/shBrushJScript.js"></script>
+  
+  <!-- Optional FlexSlider Additions -->
+  <script src="slider-js/jquery.easing.js"></script>
+  <script src="slider-js/jquery.mousewheel.js"></script>
+  <script defer src="slider-js/demo.js"></script>
+  
+</body>
+</html>
