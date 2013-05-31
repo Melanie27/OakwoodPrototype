@@ -26,8 +26,10 @@
 						</div>
 						<div class="overlay guest">
 						<span class="menu-toggle"><img src="img/iconMenu.png" width="41" height="40" alt="Menu"></span>
+						<span class="menu-label">Menu</span>
 						<nav>	
 							<ul class="main-menu">	
+								<li><a href="#"><span class="button-close" id="menu-close"><img src="img/button-close.png"></span>CLOSE</a></li>
 								<li><a href="/OakwoodPrototype/index.html">Temporary Housing Solutions</a></li>
 								<li><a href="/OakwoodPrototype/guest-services.html">Guest Services</a></li>
 								<li><a href="#">Global Destinations</a></li>
@@ -134,7 +136,9 @@
 						</aside> 
 						<article class="span7">
 							<h3>Tour Your Oakwood Apartment</h3>
-							<p>Oakwood's corporate rental and serviced apartments offer everything you need to feel comfortable and secure. Featuring spacious floor plans, contemporary furnishings and thoughtful amenities, your Oakwood apartment is the perfect place to kick off your shoes and be yourself—no matter where in the world you stay.</p>															</article>	
+							<p>Oakwood's corporate rental and serviced apartments offer everything you need to feel comfortable and secure. Featuring spacious floor plans, contemporary furnishings and thoughtful amenities, your Oakwood apartment is the perfect place to kick off your shoes and be yourself—no matter where in the world you stay.</p>	
+							<img src="img/guest-services-submenu.png">												</article>
+							
                     </section>
             	</section>
 				
@@ -154,11 +158,11 @@ solution for you, email or call us toll free at 1-877-902-0832.</p>
             	</section> <!--end footer-->
             	<section class="sub-footer hero-unit">
             		<section class="row-fluid">
-            			<div class="span3 offset5">
-            				<span class="housing-icon">
-            				</span>
-            				<p class="text-center">Equal Housing Opportunity</p>
-            			</div> 
+            			<div class="span4 offset4">
+            		<p class="housing-icon text-center">
+            			<span id="housing"><img src="img/icon-equal-housing.png" alt="icon-equal-housing"></span>Equal Housing Opportunity
+            		</p>
+            	</div> 	 
             			  <div class="span4">
             			</div>        		
             		</section>           	
@@ -168,16 +172,7 @@ solution for you, email or call us toll free at 1-877-902-0832.</p>
     </div>
 	<script src="js/jquery-1.9.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-		<script>
-		$(document).ready(function() {
-    		//console.log('hi');
-    		$('.main-menu').hide();
-    		$('.menu-toggle').click(function() {
-	    		$('.main-menu').toggle();
-    		});
-    		$('#tab-content2').hide();
-    		
-    	});
-	</script>
+    <script src="js/custom.js"></script>
+		
 </body>
 </html>
