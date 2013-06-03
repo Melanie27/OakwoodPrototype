@@ -1,0 +1,39 @@
+
+.hero-unit .nav-tabs > li {
+	height:148px;
+	margin-left:2%;
+}
+
+.hero-unit .nav-tabs > li > a {
+	width: 148px;
+} 
+
+.nav-tabs > li > a {
+    height:148px;
+    
+}
+
+.nav-tabs > li > a#submenu-kitchen {
+	background-position: 30px 25px;
+}
+
+
+.nav-tabs > li > a#submenu-sleeping {
+	background-position: 30px 25px;
+}
+
+.nav-tabs > li > a#submenu-furniture {
+	background-position: 35px 25px;
+}
+
+.nav-tabs > li > a#submenu-amenities {
+	background-position: 30px 25px;
+}
+
+
+.nav-tabs > li > a > p {
+    margin-left: 30px;
+    padding-top: 87px;
+    max-width:90px;
+}
+

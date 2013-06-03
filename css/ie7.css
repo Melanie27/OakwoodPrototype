@@ -1,0 +1,68 @@
+/*IE7 Subnavigation resizing for squares instead of circles*/
+
+.hero-unit .nav-tabs > li {
+	height:148px;
+	margin-left:2%;
+}
+
+.hero-unit .nav-tabs > li > a {
+	width: 148px;
+} 
+
+.nav-tabs > li > a {
+    height:148px;
+    
+}
+
+.nav-tabs > li > a#submenu-kitchen {
+	background-position: 30px 25px;
+}
+
+
+.nav-tabs > li > a#submenu-sleeping {
+	background-position: 30px 25px;
+}
+
+.nav-tabs > li > a#submenu-furniture {
+	background-position: 35px 25px;
+}
+
+.nav-tabs > li > a#submenu-amenities {
+	background-position: 30px 25px;
+}
+
+
+.nav-tabs > li > a > p {
+    margin-left: 30px;
+    padding-top: 87px;
+    max-width:90px;
+}
+
+/*End subnav resizing*/
+
+.apartment-description article {
+	padding-left:0px;
+	padding-right:0px;
+}
+
+.apartment-description article p, .apartment-description article h2 {
+	padding-left:8%;
+}
+
+.apartment-description aside {
+	
+}
+
+.apartment-description aside img {
+	
+	border:solid 2px green;
+}
+
+.welcome-kit article {
+	padding-left:0px;
+	padding-right:0px;
+}
+
+.welcome-kit article p, .welcome-kit article h3, .welcome-kit article ul{
+	padding-left:8%;
+}
